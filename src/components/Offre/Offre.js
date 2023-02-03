@@ -143,7 +143,7 @@ class Offre extends Component {
         this.setState({ show: true, message: "Offre ou solde insuffisant , ou enchère terminée.", type: "error", method: "post" });
         setTimeout(() => this.setState({ show: false }), 4000);
       }
-    }, 4000);
+    }, 2000);
     this.findAllOffres(this.state.currentPage);
   };
 
