@@ -20,7 +20,7 @@ const Welcome = (props) => {
         {encheres &&
           encheres.map((enchere, id) => (
             <blockquote className="blockquote mb-0" key={id}>
-              <p>{enchere.description} à partir de {enchere.prixdepart} ariary.</p>
+              <p>{enchere.description} à partir de {enchere.prixdepart}.0 Ariary.</p>
               <footer className="blockquote-footer">Propriétaire: {enchere.user.name}, Catégorie: {enchere.categorie.name}, Fin: {enchere.datefin}</footer>
             </blockquote>
           ))}
