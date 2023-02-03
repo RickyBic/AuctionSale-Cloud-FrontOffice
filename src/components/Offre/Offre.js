@@ -136,7 +136,7 @@ class Offre extends Component {
 
     this.props.saveOffre(offre, this.props.match.params.enchere_id, this.props.auth.username);
     setTimeout(() => {
-      if (this.props.offreObject.offre != "") {
+      if (this.props.offreObject.offre !== "") {
         this.setState({ show: true, message: "Offre sauvegardée.", type: "success", method: "post" });
         setTimeout(() => this.setState({ show: false }), 4000);
       } else {

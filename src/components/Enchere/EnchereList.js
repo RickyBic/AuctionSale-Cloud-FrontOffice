@@ -255,7 +255,7 @@ class EnchereList extends Component {
                       <td>{enchere.statut}</td>
                       <td>
                       {
-                        enchere.user.email != this.props.auth.username ? (
+                        enchere.user.email !== this.props.auth.username ? (
                           <ButtonGroup>
                           <Link
                             to={"encherir/" + enchere.id}
